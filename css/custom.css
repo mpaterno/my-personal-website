@@ -1,0 +1,141 @@
+/* custom.css */
+
+body {
+    line-height: 1.6;
+    font-weight: 400;
+    /* font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "Rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222; }
+
+.top-container {
+    background-image: url(../img/headerbackground.svg);
+    background-size: cover;
+}
+
+.top-bar {
+    background-color: #ffffff;
+    color: grey;
+    font-weight: 500;
+    height: 8vh;
+}
+.middle-top-bar {
+    text-align: center;
+    padding: 10px;
+}
+.right-top-bar {
+    text-align: right;
+    padding: 10px;
+}
+
+.intro {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 10vh;
+    margin-left: .5em;
+    width: 90%;
+    height: 82vh;
+    float: left;    
+}
+
+.header-text { 
+    font-weight: 700;
+    font-size:8rem;
+    color: white;
+}
+#resume {
+    padding-top: 2em;
+}
+
+.about-blob {
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+.about-text {
+    font-weight: 500;
+    color: #444444;
+}
+
+.resume-container {
+    background-color: #f16a43;
+    padding-bottom: 6vh;
+}
+
+.res-title {
+    font-weight: 700;
+    font-size: 2rem;
+    width: 20%;
+    float: left;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+.res-bold {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+.res-description {
+    width: 60%;
+    float: left;
+}
+
+.resume-list {
+    padding-left: 1em;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    color: grey;
+    float: right;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+li {
+    margin: .25em; 
+}
+
+
+.has-scroll-reveal { opacity: 0; animation-play-state: paused; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+    animation-play-state: running;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
