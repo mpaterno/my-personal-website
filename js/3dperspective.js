@@ -11,8 +11,8 @@ var mouseX=0;
     mouseX = event.pageY;
     mouseY = event.pageX;
     if (mouseX < 1080) {
-      rotateY = -(pageY/3-mouseY)/pageY*rotate;
-      rotateX = (pageX/3-mouseX)/pageX*rotate;
+      rotateY = -(pageY/4-mouseY)/pageY*rotate;
+      rotateX = (pageX/4-mouseX)/pageX*rotate;
       $('.perspective-effect').css({ 'webkit-transform' : 'perspective( 1980px )' + 
       'rotateY('+rotateY+'deg) rotateX('+rotateX+'deg)' });
     }

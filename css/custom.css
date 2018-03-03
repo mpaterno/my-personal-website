@@ -16,15 +16,22 @@ body {
     background-color: #ffffff;
     color: grey;
     font-weight: 500;
-    height: 8vh;
+    height: 70px;
+    display: flex;
+    vertical-align: middle;
+}
+.email-button {
+    padding-right: 0.5%;
 }
 .middle-top-bar {
+    line-height: 50px;
     text-align: center;
     padding: 10px;
 }
 .right-top-bar {
     text-align: right;
-    padding: 10px;
+    line-height: 80px;
+    padding-right: 20px;
 }
 
 .intro {
@@ -35,7 +42,7 @@ body {
     padding-top: 10vh;
     margin-left: .5em;
     width: 90%;
-    height: 82vh;
+    height: 83vh;
     float: left;    
 }
 
@@ -49,10 +56,24 @@ body {
 }
 
 .about-blob {
-    padding-top: 7em;
-    padding-bottom: 7em;
+    height: 100vh;
+    background-image: url(../img/aboutmebackground.svg);
+    background-size: cover;
+    display: flex;
 }
+.about-container {
+    display: flex;
+    max-width: 1280px;
+    align-items: center;
+}
+
 .about-text {
+    display: flex;
+    font-size: 2.4vw;
+    vertical-align: middle;
+    padding-left: 15%;
+    max-width: 40em;
+    text-align: right;
     font-weight: 500;
     color: #444444;
 }
